@@ -26,19 +26,19 @@ TextView::~TextView() {
 };
 
 void TextView::Extend() {
-	cout << "TextView Extend" << endl;
+    cout << "TextView Extend" << endl;
 };
 
 TextShape::TextShape(TextView* tv) {
-	cout << "TextShape Constructor" << endl;
-	_tv = tv;
+    cout << "TextShape Constructor" << endl;
+    _tv = tv;
 };
 
 TextShape::~TextShape() {
-	cout << "TextShape Destructor" << endl;
+    cout << "TextShape Destructor" << endl;
 };
 
 void TextShape::BoundingBox() {
-	cout << "TextShape BoundingBox" << endl;
-		_tv->Extend();
+    cout << "TextShape BoundingBox" << endl;
+    _tv->Extend();
 };

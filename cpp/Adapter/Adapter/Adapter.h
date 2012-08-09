@@ -19,7 +19,7 @@ class TextView {
 		virtual void Extend();
 };
 
-class TextShape: public Shape{
+class TextShape: public Shape {
 	public:
 		TextShape(TextView* tv);
 		~TextShape();
